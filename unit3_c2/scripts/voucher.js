@@ -11,9 +11,9 @@ fetch(url)
         return res.json();
     })
     .then(function (res) {
-        console.log(res)
+        console.log(res[0].vouchers)
 
-        cards(res)
+        cards(res[0].vouchers)
 
 
     })
